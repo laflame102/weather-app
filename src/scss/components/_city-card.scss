@@ -1,0 +1,103 @@
+.city-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.city-info {
+  padding: 16px;
+  cursor: pointer;
+}
+
+.city-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.city-country {
+  color: #6b7280;
+}
+
+.city-temp {
+  display: flex;
+  align-items: center;
+
+  .city-icon {
+    font-size: 30px;
+    margin-right: 8px;
+  }
+
+  .temperature {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.city-weather {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.city-actions {
+  background: #f9fafb;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.refresh-button,
+.delete-button {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: pointer;
+
+  .icon {
+    margin-right: 4px;
+  }
+
+  &.refresh-button {
+    color: #3b82f6;
+
+    &:hover {
+      color: #1d4ed8;
+    }
+  }
+
+  &.delete-button {
+    color: #ef4444;
+
+    &:hover {
+      color: #b91c1c;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}

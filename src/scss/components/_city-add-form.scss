@@ -1,0 +1,43 @@
+.city-input-wrapper {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.city-input {
+  flex-grow: 1;
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0 0 0 2px #3b82f6;
+    border-color: transparent;
+  }
+}
+
+.add-city-button {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 8px 16px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: #2563eb;
+  }
+
+  .plus-icon {
+    margin-right: 4px;
+  }
+}
